@@ -8,7 +8,7 @@ fd_all_contacts <- function(){
   
   require(httr, quietly = TRUE)
   require(dplyr, quietly = TRUE)
-  apikey <- "z6L822MqF9kZ2K3D4J8c"
+  apikey <- Sys.getenv("fd_api")
   ini_curl <- "https://alk.freshdesk.com/api/v2/contacts?&page="
   page_num <- 1
   full_curl <- paste0(ini_curl, page_num)

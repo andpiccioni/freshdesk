@@ -16,7 +16,7 @@ requesters_day <- function(day) {
   require(dplyr, quietly = TRUE)
   
   ## Constants
-  apikey <- "z6L822MqF9kZ2K3D4J8c"
+  apikey <- Sys.getenv("fd_api")
   ini_curl <- "https://alk.freshdesk.com/api/v2/search/tickets?query=\"tag:null%20AND%20group_id:19000105695%20AND%20created_at:>%27"
   fin_curl <- "%27\"&page="
   get_url <- "https://alk.freshdesk.com/api/v2/contacts/"

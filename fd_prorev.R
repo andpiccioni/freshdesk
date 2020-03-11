@@ -31,7 +31,7 @@ prorev <- function(day){
   ## Set the different arguments or parameters:
   
   FD_api <- "z6L822MqF9kZ2K3D4J8c"
-  apikey <- FD_api # constant
+  apikey <- Sys.getenv("fd_api") # constant
   tag <- "appbot" # user input, default NULL
   group_id <- 19000105695 # constant
   created_at <- day # user input

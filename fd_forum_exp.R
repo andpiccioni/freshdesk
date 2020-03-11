@@ -6,7 +6,7 @@
   require(magrittr)
   require(openxlsx)
   require(dplyr)
-  apikey <- "z6L822MqF9kZ2K3D4J8c"
+  apikey <- Sys.getenv("fd_api")
   
   # Features Request
   Feat_Req <- "https://alk.freshdesk.com/api/v2/discussions/forums/19000126774/topics?page="

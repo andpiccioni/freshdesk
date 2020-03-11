@@ -10,7 +10,7 @@ NANA <- function(day, nana_qu){
   require(openxlsx)
   require(dplyr)
   require(purrr)
-  apikey <- "z6L822MqF9kZ2K3D4J8c"
+  apikey <- Sys.getenv("fd_api")
   
   agents_name <- c('Amit', 
                  'Andrea', 

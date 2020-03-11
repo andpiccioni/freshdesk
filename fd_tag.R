@@ -13,8 +13,7 @@ tagging <- function(tag, data_set){
   
   ## Set the different arguments or parameters:
   
-  FD_api <- "z6L822MqF9kZ2K3D4J8c"
-  apikey <- FD_api # constant
+  apikey <- Sys.getenv("fd_api") # constant
   # tag <- 'never_used'
   # data_set <- never_used
 
